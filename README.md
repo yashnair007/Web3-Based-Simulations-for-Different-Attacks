@@ -63,3 +63,41 @@ Errors (such as timeouts or invalid responses) are gracefully handled.
 🔄 Proxy Contract: No | Proxy Calls: No
 💧 Liquidity: 5000 USD
 👥 Total Holders: 1234
+
+
+
+CODE 2  NFT
+
+This Python script connects to the Ethereum mainnet via Infura and performs a comprehensive security analysis of a given transaction hash. It fetches detailed transaction, block, and receipt information using Web3.py and conducts a series of security checks relevant to smart contract interactions. The tool is useful for developers, auditors, and analysts to quickly assess the legitimacy and risk level of Ethereum transactions.
+
+🔍 Features
+✅ Transaction & Block Metadata: Extracts sender, receiver, gas details, block timestamp, miner, and more.
+
+✅ Safe Address Verification: Checks whether the sender address is from a known whitelist.
+
+✅ Contract Verification: Uses Etherscan API to validate whether the recipient is a verified smart contract.
+
+✅ Replay Attack Detection: Flags suspiciously low nonce values.
+
+✅ Gas Usage Analysis: Highlights transactions with unusually high gas consumption.
+
+✅ MEV Bot Detection: Identifies potential arbitrage, sandwich, or frontrunning attacks based on input signatures.
+
+✅ Flash Loan Detection: Flags interactions with known flash loan provider contracts like Aave, Compound, or 1inch.
+
+✅ Token Approval Safety: Detects potentially risky unlimited token approvals in transaction data.
+
+✅ Color-coded CLI Output: Presents findings in a structured and readable terminal interface using termcolor.
+
+
+Requirements
+web3
+
+requests
+
+termcolor
+
+📌 Note
+Replace YOUR_ETHERSCAN_API_KEY in the code with your valid Etherscan API key.
+
+Make sure Infura endpoint and transaction hash are correctly configured.
