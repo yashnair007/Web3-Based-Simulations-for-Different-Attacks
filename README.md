@@ -101,3 +101,61 @@ termcolor
 Replace YOUR_ETHERSCAN_API_KEY in the code with your valid Etherscan API key.
 
 Make sure Infura endpoint and transaction hash are correctly configured.
+
+
+Code 3 - Telegram Bot
+This Telegram bot allows users to check whether an Ethereum token is a honeypot (scam token that traps buyers) by sending its contract address. It uses real-time data from honeypot.is and Etherscan APIs to provide deep insights on smart contract behavior and associated risks.
+
+🚀 Features
+Detects honeypot behavior in Ethereum tokens
+
+Shows risk level, buy/sell tax, contract verification, and more
+
+Scans for risky smart contract features:
+
+Mint function
+
+Blacklist function
+
+Transfer pause ability
+
+Checks liquidity lock and developer wallet holding
+
+Displays top 5 holders of the token
+
+Telegram integration using python-telegram-bot
+
+📦 Tech Stack
+Language: Python 3.10+
+
+APIs:
+
+honeypot.is
+
+Etherscan
+
+Telegram Bot: python-telegram-bot v20+
+
+Other Libraries: requests, logging
+
+📸 Sample Output
+yaml
+Copy
+Edit
+🔍 Token Address: 0x...
+📛 Name: SampleToken (SMT)
+📌 Risk Level: High Risk 🔴
+📌 Honeypot Reason: Unusually high sell tax
+💰 Buy Tax: 2% | Sell Tax: 99%
+👥 Total Holders: 45
+✅ Contract Verified on Etherscan: Yes
+🔒 Liquidity Lock: No evidence of liquidity lock. High risk!
+🚨 Rug Pull Risk: Large transactions detected! Possible rug pull.
+💼 Developer Wallet Holding: 20 ETH
+⚠️ Mint Function Present: Yes
+⚠️ Blacklist Function Present: No
+⚠️ Transfer Pause Ability: Yes
+🏦 Top 5 Holders:
+- 0xABC...123: 500000 tokens
+- ...
+
