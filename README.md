@@ -159,3 +159,26 @@ Edit
 - 0xABC...123: 500000 tokens
 - ...
 
+
+Code 4 - NFT attack simulator
+
+This script simulates a fake NFT transfer on the Sepolia Ethereum testnet by crafting and sending a raw transaction that calls the transferFrom() function on an NFT contract, without requiring actual ownership of the token. It is intended for educational and security research purposes only.
+
+⚠️ Disclaimer
+This code is for educational and ethical hacking purposes only.
+Misusing this script on the mainnet or maliciously targeting real wallets is unethical and possibly illegal.
+Always use testnets (like Sepolia) for experimentation.
+
+🧰 Features
+Connects to the Sepolia testnet via Infura RPC
+
+Constructs a manual transferFrom() function call to simulate NFT movement
+
+Signs and sends a raw transaction using the attacker's private key
+
+Mimics a "transfer" of a token from the attacker's address to a victim's address
+
+Useful for honeypot testing, malware simulation, and smart contract defense training
+
+
+
